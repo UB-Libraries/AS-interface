@@ -1,0 +1,57 @@
+
+<div class="carousel-main" data-set="carousel">
+<img src="/assets/image-1.jpg" alt="">
+</div>
+
+<div class="content-home">
+
+<div class="region-main">
+
+<div class="search-box">
+<div class="search-container">
+
+
+    <%= render partial: 'shared/search', locals: {
+      :search_url => "/search",
+      :title => t('archive._plural'),
+      :limit_options => [
+            ["#{t('actions.search')} #{t('search-limits.all')}",''],
+            [t('search-limit', :limit => t('search-limits.resources')),'resource'],
+            [t('search-limit', :limit => t('search-limits.digital')),'digital_object']
+          ],
+      :field_options => [
+            ["#{t('search_results.filter.fullrecord')}",''],
+            ["#{t('search_results.filter.title')}",'title'],
+            ["#{t('search_results.filter.creators')}",'creators_text'],
+            ["#{t('search_results.filter.subjects')}",'subjects_text'],
+            ["#{t('search_results.filter.notes')}", 'notes'],
+            ["#{t('search_results.filter.identifier')}", 'identifier']
+           ]
+    } %>
+</div>
+</div>
+
+</div>
+
+
+<div class="region-lower">
+
+<div class="lower-section-1">
+<h2>Finding Aids</h2>
+
+<p>This database provides access to finding aids for archival collections from five repositories of University Libraries: University Archives, The Poetry Collection, Law Library Archives, Polish Room, and Robert L. Brown History of Medicine Collection. Finding aids describe the materials in a collection, how they are arranged, and how each was acquired by the holding repository.  Please note: The database does not represent all archival collections and primary source materials in University Libraries. It is necessary to check the University <a href="https://search.lib.buffalo.edu/discovery/search?vid=01SUNY_BUF:catalog">Libraries’ Catalog</a> to locate materials that have been processed but not yet converted to electronic format. Links to digital materials can be found in many of the collections but the majority of the materials have not been digitized and must be viewed on-site.</p>
+
+</div>
+
+<div class="lower-section-2">
+
+<h2>Accessing Materials</h2>
+
+<p>University Libraries is open to the members of the UB community, visiting scholars and the general public. All archival materials are housed in environmentally controlled and secure stack areas on and off site, and are made available for use within the holding repository. All collections are non-circulating and are retrieved for researchers upon request. Requests to view unprocessed or off-site materials require advanced notice.  Please contact the appropriate holding repository with your request prior to your visit.</p>
+
+</div>
+
+</div>
+
+
+</div>
